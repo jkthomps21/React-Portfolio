@@ -1,13 +1,21 @@
 import React from 'react';
 import './components.css';
 import photo from '../components/img/profMe.jpg';
+import styled, { keyframes } from 'styled-components';
+import { fadeInLeft } from 'react-animations';
+
+const fadeAnimation = keyframes`${fadeInLeft}`;
+
+const FadeDiv = styled.div`
+    animation: 1s ${fadeAnimation};
+`;
 
 function About() {
     return (
         <main id="home-page" className="container">
             <br></br>
                 <section className="row justify-content-center">
-                    <div className="col-sm-10 col-md-8 col-lg-6 col-xl-5 about bounce-left mb-4">
+                    <FadeDiv className="col-sm-10 col-md-8 col-lg-6 col-xl-5 about mb-4">
                         <img src={photo} className="rounded-circle img-fluid img-dec" alt="Professional Photo"></img>
                         <div className="dropdown-divider"></div>
                         <p className="text-center">
@@ -24,7 +32,7 @@ function About() {
                         <p className="text-center">
                             Click <a href="assets/WebResume.pdf">here</a> to view my resume!
                         </p>
-                    </div>
+                    </FadeDiv>
                 </section>
             <br></br>
         </main>
