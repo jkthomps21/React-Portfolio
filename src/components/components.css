@@ -74,6 +74,12 @@ li {
     font-size: 20px;
 }
 
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+}
+
 /*
 ===============
 Bounce Effect
@@ -82,6 +88,7 @@ Bounce Effect
 
 .bounce-right {
     -webkit-animation: bounceInRight;
+    animation: bounceInRight;
     animation-name: bounceInRight;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
@@ -125,6 +132,7 @@ Bounce Effect
 
 .bounce-left {
     -webkit-animation: bounceInLeft;
+    animation: bounceInLeft;
     animation-name: bounceInLeft;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;

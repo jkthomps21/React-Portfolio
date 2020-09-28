@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './components.css';
 import Sparkles from './Sparkles';
-import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const divStyle = {
     color: "white"
@@ -22,15 +22,9 @@ function Navigation() {
                 <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} type="button" aria-controls="basic-nav" aria-expanded="false" aria-label="Toggle navigation" />
                 <Navbar.Collapse id="basic-nav">
                     <Nav className="mr-auto">
-                        <motion.div whileHover={{ scale: 1.01 }}>
-                            <Nav.Link onClick={() => setExpanded(!expanded)} className="button-home" href="/" style={divStyle}><i className="fa fa-home" aria-hidden="true"></i> Home</Nav.Link> 
-                        </motion.div>
-                        <motion.div whileHover={{ scale: 1.01 }}>
-                            <Nav.Link onClick={() => setExpanded(!expanded)} className="button-portfolio" href="/#/project" style={divStyle}>Portfolio</Nav.Link>
-                        </motion.div>
-                        <motion.div whileHover={{ scale: 1.01 }}>
-                            <Nav.Link onClick={() => setExpanded(!expanded)} className="button-contact" href="/#/contact" style={divStyle}>Contact</Nav.Link>
-                        </motion.div>
+                        <Link onClick={() => setExpanded(!expanded)} className="nav-button mt-1 pt-1" to="/" style={divStyle}><i className="fa fa-home" aria-hidden="true"></i> Home</Link> 
+                        <Link onClick={() => setExpanded(!expanded)} className="nav-button pt-1" to="/project" style={divStyle}>Portfolio</Link>
+                        <Link onClick={() => setExpanded(!expanded)} className="nav-button pt-1" to="/contact" style={divStyle}>Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
