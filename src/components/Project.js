@@ -6,6 +6,7 @@ import BurgerPhoto from '../components/img/burgers.jpg';
 import WeatherPhoto from '../components/img/weather.jpg';
 import SchedulesPhoto from '../components/img/schedules.jpg';
 import QuizPhoto from '../components/img/quiz.jpg';
+import RecipesPhoto from '../components/img/recipes.jpg';
 import styled, { keyframes } from 'styled-components';
 import { zoomInLeft, zoomInRight } from 'react-animations';
 
@@ -33,6 +34,16 @@ function Project() {
                                     Javascript, and APIs
                                 </p>
                             </div>
+                        </section>
+                        <section className="row justify-content-center">
+                            <ZoomRightDiv className="col contain about-portfolio bounce-right mb-3 px-0">
+                                <a href="https://project-3-recipe-box.herokuapp.com/login">
+                                <img src={RecipesPhoto} width="100%" height="115px" alt="" className="img-style"></img>
+                                    <div className="overlay px-0">
+                                        <div className="text">Recipe Box</div>
+                                    </div>
+                                </a>
+                            </ZoomRightDiv>
                         </section>
                         <section className="row justify-content-center">
                             <ZoomLeftDiv className="col contain about-portfolio bounce-left mb-3 px-0">
