@@ -22,9 +22,9 @@ function Navigation() {
                 <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} type="button" aria-controls="basic-nav" aria-expanded="false" aria-label="Toggle navigation" />
                 <Navbar.Collapse id="basic-nav">
                     <Nav className="mr-auto">
-                        <Link className="nav-button pt-1 mr-2" to="/" style={divStyle}><i className="fa fa-home" aria-hidden="true"></i> Home</Link> 
-                        <Link className="nav-button pt-1 mr-2" to="/project" style={divStyle}>Portfolio</Link>
-                        <Link className="nav-button pt-1" to="/contact" style={divStyle}>Contact</Link>
+                        <Link className="nav-button pt-1 mr-2" to="/" style={divStyle} onClick={() => setExpanded(false)}><i className="fa fa-home" aria-hidden="true"></i> Home</Link> 
+                        <Link className="nav-button pt-1 mr-2" to="/project" style={divStyle} onClick={() => setExpanded(false)}>Portfolio</Link>
+                        <Link className="nav-button pt-1" to="/contact" style={divStyle} onClick={() => setExpanded(false)}>Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

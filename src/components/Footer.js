@@ -13,8 +13,8 @@ function Footer() {
                 
                 <span className="justify-content-center">
                     <a target="_blank" href="#" className="footer-icon"><i className="fab fa-linkedin-in fa-lg mr-2" style={divStyle}></i></a>
-                    <a target="_blank" href="https://github.com/jkthomps21/" className="footer-icon mr-2"><i className="fab fa-github fa-lg" style={divStyle}></i></a>
-                    <a target="_blank" href="https://www.instagram.com/jkthomps21/" className="footer-icon"><i className="fab fa-instagram fa-lg" style={divStyle}></i></a>
+                    <a href="https://github.com/jkthomps21/" className="footer-icon mr-2"><i className="fab fa-github fa-lg" style={divStyle}></i></a>
+                    <a href="https://www.instagram.com/jkthomps21/" className="footer-icon"><i className="fab fa-instagram fa-lg" style={divStyle}></i></a>
                 </span>
             </div>
         </footer>
